@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace P01_EncapsulationDemo
+﻿namespace P01_EncapsulationDemo
 {
     public class Cat
     {
@@ -17,11 +11,5 @@ namespace P01_EncapsulationDemo
 
         public string Name { get; private set; }
 
-        public int Age => DateTime.UtcNow.Year - 2001;
-
-        public void Test()
-        {
-            
-        }
     }
 }

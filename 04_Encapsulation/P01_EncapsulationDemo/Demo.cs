@@ -8,13 +8,10 @@ namespace P01_EncapsulationDemo
 {
     public class Demo : Cat
     {
-        public Demo(string name, int age) : base(name, age)
+        public Demo(string name, int age) 
+            : base(name, age)
         {
         }
 
-        public void Test2()
-        {
-            this.Age += 5;
-        }
     }
 }

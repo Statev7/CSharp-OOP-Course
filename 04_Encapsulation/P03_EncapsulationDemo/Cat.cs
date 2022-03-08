@@ -21,14 +21,18 @@
             }
             private set
             {
-                if (string.IsNullOrWhiteSpace(value))
+                // Първа валидация
+
+                if (string.IsNullOrWhiteSpace(value)) 
                 {
                     throw new ArgumentException("Invalid name!");
                 }
 
+                // Втора валидация
+
                 if (value.Length < 3)
                 {
-
+                    throw new ArgumentException("Name cannot contain fewer than 3 symbols!");
                 }
 
                 this.name = value;
@@ -43,9 +47,9 @@
             }
             private set
             {
-                if (value)
+                if (value <= 0)
                 {
-
+                    throw new ArgumentException("Age cannot be zero or negative.");
                 }
             }
         }
